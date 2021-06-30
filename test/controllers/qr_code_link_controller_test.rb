@@ -1,4 +1,6 @@
-require "test_helper"
+# frozen_string_literal: true
+
+require 'test_helper'
 
 class QrCodeLinkControllerTest < ActionDispatch::IntegrationTest
   test '#show an existing QrCodeLink' do
@@ -8,8 +10,7 @@ class QrCodeLinkControllerTest < ActionDispatch::IntegrationTest
     assert_response :success
     assert_match('List of the tags', response.parsed_body)
     assert_match(qr_code.ndef_messages.first.message, response.parsed_body)
-    assert_match(qr_code.ndef_messages.first.serial_number,
-                 response.parsed_body)
+    assert_match(qr_code.ndef_messages.first.serial_number, response.parsed_body)
   end
   # test show with correct id
   # test show without correct id
