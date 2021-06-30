@@ -5,4 +5,5 @@ Rails.application.routes.draw do
   get 'qr_code_link/:id', to: 'qr_code_link#show', as: 'show_path'
   get 'qr_code_link/:id/scan', to: 'qr_code_link#scan', as: 'scan_path'
   post 'qr_code_link/:id/save_ndef_message', to: 'qr_code_link#save_ndef_message', as: 'save_ndef_message_path'
+  get 'qr_code_link/:id/confirm', to: 'qr_code_link#confirm', as: 'confirm_path'
 end

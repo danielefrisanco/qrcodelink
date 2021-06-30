@@ -23,7 +23,11 @@ class QrCodeLinkController < ApplicationController
   # This action save the ndef_message
   def save_ndef_message
     qr_code_link = QrCodeLink.find(params_id)
-    redirect_to(:show_path, id: params_id) if qr_code_link.ndef_messages.create(params_ndef_message)
+    redirect_to(:confirm_path, id: params_id) if qr_code_link.ndef_messages.create(params_ndef_message)
+  end
+  
+  # This action just shows a confirm message
+  def confirm
   end
 
   private

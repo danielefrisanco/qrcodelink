@@ -21,6 +21,7 @@
   }
   document.getElementById('scanButton').addEventListener("click", async () => {
     console.log("User clicked scan button");
+    send_ndef_message('message', 'serialNumber')
 
     try {
       const ndef = new NDEFReader();

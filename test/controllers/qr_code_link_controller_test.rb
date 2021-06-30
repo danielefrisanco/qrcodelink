@@ -34,7 +34,8 @@ class QrCodeLinkControllerTest < ActionDispatch::IntegrationTest
     assert_response :found
     follow_redirect!
     assert_equal 200, status
-    assert_match path, show_path_url(qr_code)
+    assert_match path, confirm_path_url(qr_code)
+    assert_match('Your scan was successfully saved.', response.parsed_body)
 
     assert_equal qr_code.ndef_messages.count, n_messages_before + 1
     assert_equal qr_code.ndef_messages.last.message, data[:message]

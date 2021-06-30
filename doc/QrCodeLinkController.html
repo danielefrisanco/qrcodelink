@@ -72,6 +72,7 @@
   <h3>Methods</h3>
 
   <ul class="link-list" role="directory">
+    <li ><a href="#method-i-confirm">#confirm</a>
     <li ><a href="#method-i-save_ndef_message">#save_ndef_message</a>
     <li ><a href="#method-i-scan">#scan</a>
     <li ><a href="#method-i-show">#show</a>
@@ -103,6 +104,26 @@
          <h3>Public Instance Methods</h3>
        </header>
 
+      <div id="method-i-confirm" class="method-detail ">
+        <div class="method-heading">
+          <span class="method-name">confirm</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+
+        <div class="method-description">
+          <p>This action just shows a confirm message</p>
+
+          <div class="method-source-code" id="confirm-source">
+            <pre><span class="ruby-comment"># File app/controllers/qr_code_link_controller.rb, line 30</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">confirm</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+        </div>
+
+
+      </div>
+
       <div id="method-i-save_ndef_message" class="method-detail ">
         <div class="method-heading">
           <span class="method-name">save_ndef_message</span><span
@@ -117,7 +138,7 @@
             <pre><span class="ruby-comment"># File app/controllers/qr_code_link_controller.rb, line 24</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">save_ndef_message</span>
   <span class="ruby-identifier">qr_code_link</span> = <span class="ruby-constant">QrCodeLink</span>.<span class="ruby-identifier">find</span>(<span class="ruby-identifier">params_id</span>)
-  <span class="ruby-identifier">redirect_to</span>(<span class="ruby-value">:show_path</span>, <span class="ruby-value">id:</span> <span class="ruby-identifier">params_id</span>) <span class="ruby-keyword">if</span> <span class="ruby-identifier">qr_code_link</span>.<span class="ruby-identifier">ndef_messages</span>.<span class="ruby-identifier">create</span>(<span class="ruby-identifier">params_ndef_message</span>)
+  <span class="ruby-identifier">redirect_to</span>(<span class="ruby-value">:confirm_path</span>, <span class="ruby-value">id:</span> <span class="ruby-identifier">params_id</span>) <span class="ruby-keyword">if</span> <span class="ruby-identifier">qr_code_link</span>.<span class="ruby-identifier">ndef_messages</span>.<span class="ruby-identifier">create</span>(<span class="ruby-identifier">params_ndef_message</span>)
 <span class="ruby-keyword">end</span></pre>
           </div>
         </div>
