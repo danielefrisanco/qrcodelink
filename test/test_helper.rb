@@ -3,6 +3,7 @@
 ENV['RAILS_ENV'] ||= 'test'
 require_relative '../config/environment'
 require 'rails/test_help'
+require 'rspec/mocks/minitest_integration'
 
 module ActiveSupport
   class TestCase
@@ -15,3 +16,6 @@ module ActiveSupport
     # Add more helper methods to be used by all tests here...
   end
 end
+
+# Generates the svg
+def generate_svg; end

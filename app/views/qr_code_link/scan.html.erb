@@ -1,5 +1,5 @@
 <div>
-  Open this page only on chrome on Android(TODO CHECK)
+  scan only on chrome on Android(TODO CHECK)
 </div>
 <button type="button" name="button" id="scanButton">Scan</button>
 
@@ -28,7 +28,7 @@
       console.log("> Scan started");
 
       ndef.addEventListener("readingerror", () => {
-        console.log("Argh! Cannot read data from the NFC tag. Try another one?");
+        console.log("Cannot read data from the NFC tag. Try another one?");
       });
 
       ndef.addEventListener("reading", ({ message, serialNumber }) => {
