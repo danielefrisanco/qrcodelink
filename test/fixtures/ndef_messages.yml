@@ -1,11 +1,11 @@
 # Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  serialNumber: MyString
-  message: MyText
-  qr_code_link: one
+  serial_number: a_serial_number
+  message: a_message
+  qr_code_link_id: 1
 
 two:
-  serialNumber: MyString
-  message: MyText
-  qr_code_link: two
+  serial_number: another_serial_number
+  message: another_message
+  qr_code_link_id: 2

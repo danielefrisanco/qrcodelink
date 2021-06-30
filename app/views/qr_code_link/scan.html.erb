@@ -1,5 +1,6 @@
-Open this page only on chrome on Android(TODO CHECK)<br>
-
+<div>
+  Open this page only on chrome on Android(TODO CHECK)
+</div>
 <button type="button" name="button" id="scanButton">Scan</button>
 
 <script type="text/javascript">
@@ -12,10 +13,8 @@ Open this page only on chrome on Android(TODO CHECK)<br>
       data: { message: message,
               serial_number: serialNumber
             },
-      success: function() {
-        // do something
-      },
-      error: function() {
+      error: function(error) {
+        console.log(error);
         // do something
       }
     });

@@ -13,7 +13,7 @@ module Qrcode
 
 
     # ngrok
-    config.hosts << "f07da3655878.ngrok.io"
+    # config.hosts << "f07da3655878.ngrok.io"
 
     # Configuration for the application, engines, and railties goes here.
     #
