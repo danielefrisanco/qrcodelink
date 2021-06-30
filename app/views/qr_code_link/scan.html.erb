@@ -1,25 +1,26 @@
-// open this page only on chrome on Android
-<%= form_tag save_ndef_message_path_url(@qr_code_link) do %>
-  <%= hidden_field_tag "serial_number", id: 'serialNumber' %>
-  <%= hidden_field_tag "message", id: 'message' %>
-  <%= submit_tag 'Scan', id: 'scanButton' %>
-<% end %>
-<button type="button" name="button" id="scanButton1">Scan1</button>
+Open this page only on chrome on Android(TODO CHECK)<br>
+
+<button type="button" name="button" id="scanButton">Scan</button>
+
 <script type="text/javascript">
+
   // Sends the message
   var send_ndef_message = function(message, serialNumber) {
-    document.ajax({
+    $.ajax({
       type:'POST',
       url:"<%= save_ndef_message_path_url(@qr_code_link) %>",
       data: { message: message,
               serial_number: serialNumber
             },
-      success:function() {
+      success: function() {
+        // do something
+      },
+      error: function() {
         // do something
       }
     });
   }
-  document.getElementById('scanButton1').addEventListener("click", async () => {
+  document.getElementById('scanButton').addEventListener("click", async () => {
     console.log("User clicked scan button");
 
     try {
