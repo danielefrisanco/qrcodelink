@@ -43,3 +43,7 @@ TODO:
 * add create QrCodeLink (low priority)
 
 * use rspec for the tests
+
+* better css style
+
+* docker and docker-compose
