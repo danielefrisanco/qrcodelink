@@ -26,6 +26,8 @@ rails test
 
 rails s
 
+go to http://localhost:3000/
+
 
 * Documentation
 
@@ -34,15 +36,12 @@ rdoc --main README.md --title 'QRCode app' README.md app/**/qr_code_link_c*.rb
 
 
 TODO:
+* add jest tests for react pages
 
 * use pgcrypto for uuid(better to drop the db and redo from scratch)
-
-* use React
 
 * add create QrCodeLink (low priority)
 
 * use rspec for the tests
 
 * use yard as documentation
-
-* show errors in the pages(better to wait for React)
