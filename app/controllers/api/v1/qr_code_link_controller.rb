@@ -36,11 +36,13 @@ module Api
       private
 
       # Returns the id from the params
+      # @return The requested id
       def params_id
         params.require(:id)
       end
 
       # Returns message and serial_number from the params
+      # @return The message and serial_number of the scanned nfc
       def params_ndef_message
         params.permit(:message, :serial_number)
       end

@@ -31,7 +31,7 @@ go to http://localhost:3000/
 
 * Documentation
 
-rdoc --main README.md --title 'QRCode app' README.md app/**/qr_code_link_c*.rb
+rake yard
 
 
 
@@ -43,5 +43,3 @@ TODO:
 * add create QrCodeLink (low priority)
 
 * use rspec for the tests
-
-* use yard as documentation

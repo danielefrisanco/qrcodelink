@@ -63,3 +63,6 @@ gem 'rqrcode', '~> 2.0'
 
 # rexml (to run tests)
 gem 'rexml'
+
+# documentation
+gem 'yard'
