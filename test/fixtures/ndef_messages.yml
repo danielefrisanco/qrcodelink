@@ -3,9 +3,9 @@
 one:
   serial_number: a_serial_number
   message: a_message
-  qr_code_link_id: 1
+  qr_code_link_id: 00000000-0000-4000-8000-000000000001
 
 two:
   serial_number: another_serial_number
   message: another_message
-  qr_code_link_id: 2
+  qr_code_link_id: 00000000-0000-4000-8000-000000000002

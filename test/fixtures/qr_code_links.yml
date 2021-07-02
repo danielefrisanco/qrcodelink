@@ -5,9 +5,9 @@
 # below each fixture, per the syntax in the comments below
 #
 one:
-  id: 1
+  id: 00000000-0000-4000-8000-000000000001
 # column: value
 #
 two:
-  id: 2
+  id: 00000000-0000-4000-8000-000000000002
 # column: value

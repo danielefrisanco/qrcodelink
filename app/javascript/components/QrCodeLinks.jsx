@@ -28,7 +28,6 @@ class QrCodeLinks extends React.Component {
 
       <div key={index} className="col-md-6 col-lg-4">
         <div className="card mb-4">
-
           <div className="card-body">
             <h5 className="card-title">{qr_code_link.id}</h5>
             <Link to={`/qr_code_link/${qr_code_link.id}`} className="btn custom-button">

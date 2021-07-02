@@ -27,6 +27,7 @@ module Api
         n_messages_before = qr_code.ndef_messages.count
         post(api_v1_save_ndef_message_path_url(qr_code), params: data, as: :json)
         assert_response :ok
+        qr_code.ndef_messages.reload
         assert_equal(qr_code.ndef_messages.last.as_json, response.parsed_body)
 
         assert_equal qr_code.ndef_messages.count, n_messages_before + 1

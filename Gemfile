@@ -66,3 +66,6 @@ gem 'rexml'
 
 # documentation
 gem 'yard'
+
+# pgcrypto for uuid
+gem 'active_record-pgcrypto'

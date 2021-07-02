@@ -16,18 +16,18 @@ ActiveRecord::Schema.define(version: 20_210_630_064_132) do
   # These are extensions that must be enabled in order to support this database
   enable_extension 'plpgsql'
 
-  create_table 'ndef_messages', force: :cascade do |t|
-    t.string('serial_number')
-    t.text('message')
-    t.bigint('qr_code_link_id', null: false)
-    t.datetime('created_at', precision: 6, null: false)
-    t.datetime('updated_at', precision: 6, null: false)
-    t.index(['qr_code_link_id'], name: 'index_ndef_messages_on_qr_code_link_id')
+  create_table 'ndef_messages', id: :uuid, default: -> { 'gen_random_uuid()' }, force: :cascade do |t|
+    t.string 'serial_number'
+    t.text 'message'
+    t.uuid 'qr_code_link_id', null: false
+    t.datetime 'created_at', precision: 6, null: false
+    t.datetime 'updated_at', precision: 6, null: false
+    t.index ['qr_code_link_id'], name: 'index_ndef_messages_on_qr_code_link_id'
   end
 
-  create_table 'qr_code_links', force: :cascade do |t|
-    t.datetime('created_at', precision: 6, null: false)
-    t.datetime('updated_at', precision: 6, null: false)
+  create_table 'qr_code_links', id: :uuid, default: -> { 'gen_random_uuid()' }, force: :cascade do |t|
+    t.datetime 'created_at', precision: 6, null: false
+    t.datetime 'updated_at', precision: 6, null: false
   end
 
   add_foreign_key 'ndef_messages', 'qr_code_links'
