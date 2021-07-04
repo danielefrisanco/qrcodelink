@@ -60,48 +60,54 @@
       <div id="content"><div id='filecontents'>
 <h1 id="label-README">README</h1>
 
-<p>This application has the only purpose to help the reading process for a NFC to o so it provides a qr code link to a scan page that can be opened on an Android device. After scanning the NDEF message is saved in the database</p>
-<ul><li>
-<p>Ruby version  it uses ruby 3.0.1 and rails 6.1.4</p>
-</li><li>
-<p>System dependencies</p>
-</li><li>
-<p>Configuration</p>
-</li><li>
-<p>Database</p>
-</li></ul>
+<p>This application has the only purpose to help the reading process for a <code>NFC</code> to o so it provides a qr code link to a scan page that can be opened on an Android device. After scanning the <code>NDEF</code> message is saved in the database</p>
+
+<h2 id="label-Ruby+version">Ruby version</h2>
+
+<p>It uses ruby 3.0.1 and rails 6.1.4</p>
+
+<h2 id="label-System+dependencies">System dependencies</h2>
+
+<h2 id="label-Configuration">Configuration</h2>
+
+<h2 id="label-Database">Database</h2>
 
 <p>rails db:create db:migrate db:seed</p>
-<ul><li>
-<p>How to run the test suite</p>
-</li></ul>
 
-<p>rails test</p>
-<ul><li>
-<p>Deployment instructions</p>
-</li></ul>
+<h2 id="label-How+to+run+the+test+suite">How to run the test suite</h2>
+
+<p>rails test yarn jest</p>
+
+<h2 id="label-Deployment+instructions">Deployment instructions</h2>
 
 <p>rails s</p>
 
-<p>go to <a href="http://localhost:3000">localhost:3000</a>/</p>
-<ul><li>
-<p>Documentation</p>
-</li></ul>
+<p>Go to <a href="http://localhost:3000">localhost:3000</a>/</p>
 
-<p>rake doc</p>
+<h2 id="label-Documentation">Documentation</h2>
 
-<p>TODO: * add jest tests for react pages</p>
+<p>rake yard</p>
+
+<h1 id="label-TODO-3A">TODO:</h1>
 <ul><li>
-<p>use pgcrypto for uuid(better to drop the db and redo from scratch)</p>
+<p>complete jest tests for react pages(new to jest and I find it quite cumbersome)</p>
+</li><li>
+<p>divide front end app from back end to prepare for docker(make sure the test are completed)</p>
+</li><li>
+<p>docker and docker-compose</p>
 </li><li>
 <p>add create QrCodeLink (low priority)</p>
 </li><li>
+<p>show scanned NFCs (low priority)</p>
+</li><li>
 <p>use rspec for the tests</p>
+</li><li>
+<p>better css style</p>
 </li></ul>
 </div></div>
 
       <div id="footer">
-  Generated on Thu Jul  1 20:33:49 2021 by
+  Generated on Sun Jul  4 22:18:08 2021 by
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.9.26 (ruby-3.0.1).
 </div>
