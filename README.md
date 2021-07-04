@@ -20,6 +20,7 @@ rails db:create db:migrate db:seed
 ## How to run the test suite
 
 rails test
+yarn jest
 
 ## Deployment instructions
 
@@ -34,7 +35,11 @@ rake yard
 
 # TODO:
 
-* add jest tests for react pages
+* complete jest tests for react pages(new to jest and I find it quite cumbersome)
+
+* divide front end app from back end to prepare for docker(make sure the test are completed)
+
+* docker and docker-compose
 
 * add create QrCodeLink (low priority)
 
@@ -43,5 +48,3 @@ rake yard
 * use rspec for the tests
 
 * better css style
-
-* docker and docker-compose

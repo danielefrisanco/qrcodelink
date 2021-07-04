@@ -10,7 +10,9 @@
     "babel-plugin-transform-react-remove-prop-types": "^0.4.24",
     "babel-preset-react-native": "4.0.0",
     "bootstrap": "^5.0.2",
+    "enzyme": "^3.11.0",
     "jquery": "^3.6.0",
+    "jsdom": "^16.6.0",
     "popper.js": "^1.16.1",
     "prop-types": "^15.7.2",
     "react": "^17.0.2",
@@ -22,6 +24,16 @@
   },
   "version": "0.1.0",
   "devDependencies": {
+    "@testing-library/react": "^12.0.0",
+    "babel-jest": "^27.0.6",
+    "enzyme-adapter-react-17-updated": "^1.0.2",
+    "fetch-mock-jest": "^1.5.1",
+    "jest": "^27.0.6",
+    "regenerator-runtime": "^0.13.7",
     "webpack-dev-server": "^3.11.2"
+  },
+  "jest": {
+    "testEnvironment": "jsdom",
+    "testMatch": [ "**/__test__/?(*.)+(test).[jt]s?(x)" ]
   }
 }

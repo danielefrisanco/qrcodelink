@@ -25,7 +25,6 @@ class QrCodeLinks extends React.Component {
     const { qr_code_links } = this.state;
 
     const allLinks = qr_code_links.map((qr_code_link, index) => (
-
       <div key={index} className="col-md-6 col-lg-4">
         <div className="card mb-4">
           <div className="card-body">
@@ -38,12 +37,11 @@ class QrCodeLinks extends React.Component {
       </div>
     ));
 
-
     return (
       <>
         <section className="jumbotron jumbotron-fluid text-center">
           <div className="container py-5">
-            <h1 className="display-4">Qr code link list</h1>
+            <h1 className="display-4 qr-code-links-description">Qr code link list</h1>
 
           </div>
         </section>
