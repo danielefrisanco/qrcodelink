@@ -32,8 +32,9 @@ function wait() {
 }
 
 describe('QrCodeLink', () => {
-  it('renders correctly a descriptive text and call the api', async () => {
-    let match = {params:{id: '1'}}
+  it('renders a descriptive text and call the api', async () => {
+    // mimic the props content
+    let match = {params: {id: '1'}}
     const wrapper = shallow(<QrCodeLink match={match}/>);
     expect(wrapper.find('h5').text())
       .toBe('Follow this qr code to the nfc scan page');

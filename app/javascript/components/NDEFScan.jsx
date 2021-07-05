@@ -8,7 +8,6 @@ class NDEFScan extends React.Component {
     this.state = {success: false, error: false};
     this.scanButtonOnClick = this.scanButtonOnClick.bind(this);
     this.sendNdefMessage = this.sendNdefMessage.bind(this);
-
   }
 
   // Sends the message

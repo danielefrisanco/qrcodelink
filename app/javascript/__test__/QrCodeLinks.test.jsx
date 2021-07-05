@@ -28,7 +28,7 @@ function wait() {
     return new Promise((resolve) => setTimeout(resolve));
 }
 describe('QrCodeLinks', () => {
-  it('renders correctly a descriptive text and call the api', () => {
+  it('renders a descriptive text and call the api', () => {
     const wrapper = shallow(<QrCodeLinks />);
     expect(wrapper.find('.qr-code-links-description').text())
       .toBe('Qr code link list');
