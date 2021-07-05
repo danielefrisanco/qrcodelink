@@ -11,6 +11,7 @@
     "babel-preset-react-native": "4.0.0",
     "bootstrap": "^5.0.2",
     "enzyme": "^3.11.0",
+    "jest-when": "^3.3.1",
     "jquery": "^3.6.0",
     "jsdom": "^16.6.0",
     "popper.js": "^1.16.1",
@@ -34,6 +35,8 @@
   },
   "jest": {
     "testEnvironment": "jsdom",
-    "testMatch": [ "**/__test__/?(*.)+(test).[jt]s?(x)" ]
+    "testMatch": [
+      "**/__test__/?(*.)+(test).[jt]s?(x)"
+    ]
   }
 }

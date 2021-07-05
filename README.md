@@ -19,8 +19,8 @@ rails db:create db:migrate db:seed
 
 ## How to run the test suite
 
-rails test
-yarn jest
+* rails test
+* yarn jest
 
 ## Deployment instructions
 

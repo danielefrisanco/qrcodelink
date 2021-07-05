@@ -5,7 +5,7 @@ class QrCodeLink extends React.Component {
   constructor(props) {
     super(props);
 
-    this.state = { svg: 'a' };
+    this.state = { svg: '' };
 
     this.addHtmlEntities = this.addHtmlEntities.bind(this);
   }
@@ -39,7 +39,7 @@ class QrCodeLink extends React.Component {
     const {svg}  = this.state;
 
     const svg_html = this.addHtmlEntities(svg);
-    
+
     return (
       <div className="">
 
@@ -48,7 +48,7 @@ class QrCodeLink extends React.Component {
 
             <div className="col-sm-12 col-lg-7">
               <h5 className="mb-2">Follow this qr code to the nfc scan page</h5>
-              <div
+              <div className="qr-code-svg"
                 dangerouslySetInnerHTML={{
                   __html: `${svg_html}`
                 }}
