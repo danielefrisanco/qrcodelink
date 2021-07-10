@@ -19,7 +19,6 @@ class NDEFScan extends React.Component {
     } = this.props;
     const url = '/api/v1/save_ndef_message/' + id;
 
-
     const token = document.querySelector('meta[name="csrf-token"]').content;
     fetch(url, {
       method: "POST",
@@ -39,9 +38,8 @@ class NDEFScan extends React.Component {
     })
     .then(response => this.setState({success: true, error: false}))
     .catch(error => this.setState({success: false, error: true}));
-
-
   }
+  
   async scanButtonOnClick() {
     console.log("User clicked scan button");
     // this.sendNdefMessage('message', 'serialNumber') TEST
